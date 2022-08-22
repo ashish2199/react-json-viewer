@@ -11,6 +11,7 @@
 
 .jsonContainer {
   color: initial;
+  margin: 10px;
 }
 
 .jsonPair {
@@ -23,4 +24,9 @@
 .jsonPair > .jsonValue {
   padding-left: 5px;
   color: green;
+}
+
+.collapse-text {
+  font-weight: bold;
+  padding-right: 5px;
 }

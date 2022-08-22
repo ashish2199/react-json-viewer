@@ -1,5 +1,5 @@
 import "./styles.css";
-import JSONViewer from "./JSONViewer";
+import JSONViewer from "./JsonViewer/JSONViewer";
 
 const data = {
   taxi:
@@ -31,7 +31,14 @@ const obj1 = {
       b: 2
     },
     g: {
-      a: [1, 2, 3, 4],
+      a: [1, 2, 3, 4, {
+        a: 1,
+        b: 2
+      },
+      {
+        a: 1,
+        b: 2
+      }],
       b: undefined,
       c: null,
       d: false,
