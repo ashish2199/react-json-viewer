@@ -10,9 +10,11 @@ export default function JSONViewer({ inpJson }) {
       <div className="jsonContainer">
         <button onClick={()=>{setGloballyCollapsed(false)}}> Expand All </button>
         <button onClick={()=>{setGloballyCollapsed(true)}}> Collpase All </button>
-        <collapsibleContext.Provider value={globallyCollapsed}>
-          <JsonElement json={inpJson} />
-        </collapsibleContext.Provider>
+        <div className="jsonContainer">
+          <collapsibleContext.Provider value={globallyCollapsed}>
+            <JsonElement json={inpJson} />
+          </collapsibleContext.Provider>
+        </div>
       </div>
     </>
   );

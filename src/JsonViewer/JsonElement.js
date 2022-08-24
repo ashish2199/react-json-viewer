@@ -21,7 +21,7 @@ export function JsonElement({ json }) {
 
   return (
     <>
-      <div className="jsonContainer">{typeof json === "object" ? getJsonView(json) : json}</div>
+      <div>{typeof json === "object" ? getJsonView(json) : json}</div>
     </>
   );
 }
